@@ -2,10 +2,11 @@
 
 // number
 4;
+0;
 
 // string (también comillas de lado)
-("Hola mundo");
-("Hola mundo");
+"Hola mundo";
+"Hola mundo";
 
 // booleanos
 true;
