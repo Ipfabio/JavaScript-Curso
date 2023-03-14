@@ -11,7 +11,8 @@ const alumno = [
   },
 ];
 
-/*Enunciado del ejercicio:
+/*
+Enunciado del ejercicio:
 
 Crea un nuevo archivo JS que contenga una lista con los siguientes elementos:
 
