@@ -1,14 +1,28 @@
-let altura_centimetros = 170;
-console.log(altura_centimetros);
+let altura_cm = 170;
 
-let altura_metros = 1.7;
-console.log(altura_metros.toFixed(2));
+let altura_mts = 1.7;
 
 let peso_kg = 70.0;
-console.log(peso_kg);
 
-let altura_mts_redondeado = 1.7;
-console.log(altura_mts_redondeado.toFixed());
+let altura_mts_redondeado = Math.ceil(altura_mts);
 
-let peso_kg_redondeado = 70;
-console.log(peso_kg_redondeado.toFixed());
+let peso_kg_redondeado = Math.floor(peso_kg);
+
+let sonIguales = Number.MAX_VALUE + 1 === Number.MAX_VALUE;
+
+/*Enunciado del ejercicio:
+
+Crea un archivo JS que contenga las siguientes líneas
+
+- Una variable que contenga tu altura en centímetros (entero)
+
+- Una variable que contenga tu altura en metros (número de coma flotante)
+
+- Una variable que contenga tu peso en kilogramos (número de coma flotante)
+
+- Una variable que contenga tu altura en metros redondeada hacia arriba
+
+- Una variable que contenga tu peso en kilogramos redondeado hacia abajo
+
+- Una variable que contenga si "el máximo valor que se puede obtener en Javascript + 1" es igual al máximo valor que se puede obtener en Javascript
+ */
