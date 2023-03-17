@@ -1,0 +1,20 @@
+let nombre = "Fabio";
+let apellido = "Break";
+let estudiante = `${nombre} ${apellido}`;
+let estudianteMayus = estudiante.toUpperCase();
+let estudianteMinus = estudiante.toLowerCase();
+let letras = estudiante.length;
+let primeraLetra = nombre.startsWith("F");
+let ultimaLetra = apellido.endsWith("k");
+let noSpace = estudiante.replace(" ", "");
+let bool = estudiante.includes(nombre);
+
+console.log(nombre);
+console.log(apellido);
+console.log(estudiante);
+console.log(estudianteMayus);
+console.log(estudianteMinus);
+console.log(letras);
+console.log(primeraLetra);
+console.log(ultimaLetra);
+console.log(bool);
