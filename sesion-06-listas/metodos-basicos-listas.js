@@ -23,7 +23,7 @@ array.unshift("inicio", 87, 99);
 console.log(array);
 
 // Métodos para eliminar valores en nuestros arrays
-// .pop() .shift() => Mutal el valor del array
+// .pop() .shift() => Mutan el valor del array
 
 const array2 = [1, 3, "hola", false];
 // Valores al final -> Pop
