@@ -1,4 +1,4 @@
-const obj = {
+const datos = {
   nombre: "Marcos",
   apellido: "Antony",
   edad: 25,
@@ -6,26 +6,28 @@ const obj = {
   eresDesarrollador: true,
 };
 
-let edad = obj.edad;
+let edad = datos.edad;
 console.log(edad);
 
-const bestFriend1 = {
-  nombre: "Julio",
-  apellido: "Merc",
-  edad: 23,
-  altura: 1.57,
-  eresDesarrollador: false,
-};
-
-const bestFriend2 = {
-  nombre: "Charlie",
-  apellido: "Chaz",
-  edad: 27,
-  altura: 1.9,
-  eresDesarrollador: false,
-};
-
-let lista = [obj, bestFriend1, bestFriend2];
+const lista = [
+  {
+    ...datos,
+  },
+  {
+    nombre: "Julio",
+    apellido: "Merc",
+    edad: 23,
+    altura: 1.57,
+    eresDesarrollador: false,
+  },
+  {
+    nombre: "Charlie",
+    apellido: "Chaz",
+    edad: 27,
+    altura: 1.9,
+    eresDesarrollador: false,
+  },
+];
 console.log(lista);
 
 let listaOrdenada = lista.sort((a, b) => b.edad - a.edad);
