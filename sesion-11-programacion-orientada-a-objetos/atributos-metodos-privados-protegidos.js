@@ -18,11 +18,19 @@ class Persona {
   }
 
   obtenNombre() {
+    // Función Getter -> Nos permite acceder (de forma controlada) a algún atributo protegido
     return this.#nombre;
   }
 
   #obtenEdad() {
     return this.#edad;
+  }
+
+  getEdad() {
+    return this.#edad;
+  }
+  setEdad(nuevaEdad) {
+    this.#edad = nuevaEdad;
   }
 }
 
@@ -33,3 +41,12 @@ persona.saludo();
 console.log(persona.obtenNombre());
 // console.log(persona.#obtenEdad())
 console.log(persona._isDeveloper);
+
+// Getter -> Métodos que nos permiten obtener atributos/métodos privados o protegidos
+const edad = persona.getEdad();
+console.log(edad);
+
+// Setter -> Métodos que nos permiten cambiar el valor de los atributos privados o protegidos
+// Quiero cambiar la edad de la persona
+persona.setEdad(15);
+console.log(persona.getEdad());
